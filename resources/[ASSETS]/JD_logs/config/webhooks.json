@@ -1,0 +1,60 @@
+{
+    "all": {
+        "webhook": "",
+        "color": "#A1A1A1",
+        "embed": true
+    },
+    "system": {
+        "webhook": ""
+    },
+    "imageStore": {
+        "webhook": ""
+    },
+	"deaths": {
+        "webhook": "https://discord.com/api/webhooks/1012082454200324189/TCJ1p_8OR5rYKzaHL3ZfGqOcRYNE1xPM2sN84MIWqqHMdkv18pqRdxTatJMWSGLSFX9n",
+        "icon": "💀",
+        "color": "#000000",
+        "logHistory": true,
+        "embed": true,
+        "Hide": {
+            "PlayerID": false,
+            "SteamID": false,
+            "SteamURL": false,
+            "Postal": false,
+            "DiscordID": false,
+            "License": false,
+            "License2": false,
+            "IP": false,
+            "PlayTime": false,
+            "playerPing": false,
+            "esxName": false,
+            "esxJob": false,
+            "esxMoney": false,
+            "playerHealth": false,
+            "playerArmor": false
+        }
+    },
+    "explosion": {
+        "webhook": "https://discord.com/api/webhooks/1012082510898941998/9oUU3QA2OoferLmkl4lc5riZXo3iGT2PF-9_z0s_BYOQakRKYIlGmj-t0CXMZh8BXoIL",
+        "icon": "🧨",
+        "color": "#03FC98",
+        "embed": true,
+        "Hide": {
+            "PlayerID": false,
+            "SteamID": false,
+            "SteamURL": false,
+            "Postal": false,
+            "DiscordID": false,
+            "License": false,
+            "License2": false,
+            "IP": false,
+            "PlayTime": false,
+            "playerPing": false,
+            "esxName": false,
+            "esxJob": false,
+            "esxMoney": false,
+            "playerHealth": false,
+            "playerArmor": false
+        }
+    },
+}

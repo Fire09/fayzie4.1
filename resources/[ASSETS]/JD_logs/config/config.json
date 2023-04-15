@@ -1,0 +1,60 @@
+{
+    "locals": "en",
+
+    "EnableAcFunctions": true,
+
+    "allLogs": true,
+    "postals": true,
+    "weaponLog": true,
+    "inlineField": true,
+
+    "playerId": true,
+    "steamId": true,
+    "steamUrl": true,
+    "discordId": true,
+    "license": true,
+    "license2": true,
+    "ip": true,
+    "playerPing": true,
+
+    "Session": false,
+    "PlayTime": false,
+    "playerHealth": true,
+    "playerArmor": true,
+    "timestamp": true,
+
+    "forceSteam": false,
+
+    "nameChangePerms": "jd.staff",
+    "logHistoryPerms": "jd.staff",
+    "screenshotPerms": "jd.staff",
+    "AntiCheatBypass": "jd.staff",
+
+    "DiscordUpdateNotify": true,
+
+    "userName": "AstralRP",
+    "avatar": "https://via.placeholder.com/30x30",
+    "communityName": "AstralRP",
+    "communityLogo": "https://via.placeholder.com/30x30",
+    "footerText": "2022 © AstralRP",
+    "footerIcon": "https://via.placeholder.com/30x30",
+
+    "PrefechGlobalBans": false,
+    "GlobalBanBypass": [],
+
+    "WeaponsNotLogged": [
+        "WEAPON_SNOWBALL",
+        "WEAPON_FIREEXTINGUISHER",
+        "WEAPON_PETROLCAN"
+    ],
+
+    "Commands": {
+        "logs": ["logs", "lh"],
+        "screenshot": ["screenshot", "ss"]
+    },
+
+    "useESX": false,
+    "esxName": false,
+    "esxJob": false,
+    "esxMoney": false
+}

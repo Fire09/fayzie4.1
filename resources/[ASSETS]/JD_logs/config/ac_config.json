@@ -1,0 +1,60 @@
+{
+    "KickSettings":{
+        "BlacklistedVehicleLimit": 3,
+        "BlacklistedVehicles": true,
+        "BlacklistedCommands": true,
+        "ConfigNotSynced": true
+    },
+
+    "BlacklistedVehicles": [
+        "Blimp",
+        "Blimp2",
+        "Dump"
+    ],
+
+    "BlacklistedObjects": [
+        "stt_prop_ramp_adj_flip_m",
+        "stt_prop_ramp_adj_flip_mb",
+        "stt_prop_ramp_adj_flip_s",
+        "stt_prop_ramp_adj_flip_sb",
+        "stt_prop_ramp_adj_hloop",
+        "stt_prop_ramp_adj_loop",
+        "stt_prop_ramp_jump_l",
+        "stt_prop_ramp_jump_m",
+        "stt_prop_ramp_jump_s",
+        "stt_prop_ramp_jump_xl",
+        "stt_prop_ramp_jump_xs",
+        "stt_prop_ramp_jump_xxl",
+        "stt_prop_ramp_multi_loop_rb",
+        "stt_prop_ramp_spiral_l",
+        "stt_prop_ramp_spiral_l_l",
+        "stt_prop_ramp_spiral_l_m",
+        "stt_prop_ramp_spiral_l_s",
+        "stt_prop_ramp_spiral_l_xxl",
+        "stt_prop_ramp_spiral_m",
+        "stt_prop_ramp_spiral_s",
+        "stt_prop_ramp_spiral_xxl"
+    ],
+
+    "BlacklistedCommands": [
+        "haha",
+        "lol",
+        "xddd",
+        "chocolate",
+        "panickey",
+        "jolmany",
+        "killmenu",
+        "panik",
+        "lynx",
+        "brutan",
+        "saucy"
+    ],
+
+    "BlacklistedKeys": {
+        "47": "Ruby Mod Menu",
+        "117": "Lynx Evo Menu",
+        "121": "Lynx R3 Menu",
+        "44": "Lynx R4 Menu",
+        "214": "Delete Menu"
+    }
+}
