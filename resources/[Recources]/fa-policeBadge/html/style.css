@@ -1,0 +1,36 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#icemallow-badge {
+  position: relative;
+  float: right;
+  width: 514px;
+  height: 639px;
+  background: transparent;
+  background-image: url("https://i.imgur.com/W4BTWz5.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#badgeImg {
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+  transform: translate(0, -90px);
+}
+
+#badgeName {
+  transform: translate(0, -105px);
+  text-transform: uppercase;
+  color: #3a3a3a;
+}
+
+#badgeNumber {
+  transform: translate(0, -145px);
+  text-transform: uppercase;
+  color: #3a3a3a;
+}
