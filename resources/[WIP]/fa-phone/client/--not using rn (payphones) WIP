@@ -1,0 +1,74 @@
+local insidePrison = false
+
+local payphoneModels = {
+  `p_phonebox_02_s`,
+  `prop_phonebox_03`,
+  `prop_phonebox_02`,
+  `prop_phonebox_04`,
+  `prop_phonebox_01c`,
+  `prop_phonebox_01a`,
+  `prop_phonebox_01b`,
+  `p_phonebox_01b_s`,
+}
+
+Citizen.CreateThread(function()
+  exports["fa-interact"]:AddPeekEntryByModel(payphoneModels, {{
+    event = "fa-phone:startPayPhoneCall",
+    id = "lol_phone_startPayPhoneCall",
+    icon = "phone-volume",
+    label = "Make Call",
+    parameters = {},
+  }}, {
+    distance = { radius = 1.5 },
+    isEnabled = function()
+      if insidePrison then
+        return false
+      end
+      return true
+    end
+   })
+end)
+
+local entityPayPhoneCoords = nil
+AddEventHandler("fa-phone:startPayPhoneCall", function(pArgs, pEntity)
+  entityPayPhoneCoords = GetEntityCoords(pEntity)
+  exports['fa-interface']:openApplication('textbox', {
+    callbackUrl = 'fa-phone:startPayPhoneCallAction',
+    key = 1,
+    items = {
+      {
+        icon = "phone-volume",
+        label = "Phone Number",
+        name = "number",
+      },
+    },
+    show = true,
+  })
+end)
+
+AddEventHandler("fa-polyzone:enter", function(zone, data)
+    if zone == "prison" then insidePrison = true end
+end)
+
+AddEventHandler("fa-polyzone:exit", function(zone)
+    if zone == "prison" then insidePrison = false end
+end)
+
+RegisterInterfaceCallback("fa-phone:startPayPhoneCallAction", function(data, cb)
+  cb({ data = {}, meta = { ok = true, message = 'done' } })
+  exports['fa-interface']:closeApplication('textbox')
+  local number = data.values and data.values.number or data.key.phone
+  TriggerServerEvent('phone:callContact', exports['isPed']:isPed('cid'), pnumber, true, 'Unknown Number')
+
+--  RPC.execute("phone:callStart", data.character.number, number, 'PAYPHONE', "Unknown Number")
+  Citizen.CreateThread(function()
+    while entityPayPhoneCoords do
+      if #(GetEntityCoords(PlayerPedId()) - entityPayPhoneCoords) > 2.0 then
+        entityPayPhoneCoords = nil
+        endCall()
+  --      TriggerEvent("erp:fiber:voice-event", 'callEnd')
+      end
+      Citizen.Wait(500)
+    end
+  end)
+end)

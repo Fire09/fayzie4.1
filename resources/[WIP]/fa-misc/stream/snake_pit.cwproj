@@ -1,0 +1,24 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+<Item>np_halloween_legion_square.ymap</Item>
+<Item>np_halloween_city_hall.ymap</Item>
+    <Item>hei_kt1_10_strm_0.ymap</Item>
+    <Item>..\..\..\fa-wuchang\stream\ymap\hei_kt1_rd_long_0.ymap</Item>
+    <Item>hei_kt1_rd_strm_0.ymap</Item>
+    <Item>hei_kt1_rd_critical_0.ymap</Item>
+    <Item>snake_pit.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames />
+  <YbnFilenames />
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+  <YdrFilenames />
+  <YddFilenames />
+  <YftFilenames />
+  <YtdFilenames />
+</CodeWalkerProject>

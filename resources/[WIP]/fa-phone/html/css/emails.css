@@ -1,0 +1,109 @@
+/* Emails */
+
+.emails-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    animation-timing-function: unset;
+    animation-delay: unset;
+    animation-direction: unset;
+    animation-fill-mode: unset;
+    animation-play-state: unset;
+    animation-name: unset;
+    animation-timeline: unset;
+    flex-wrap: wrap;
+    background: rgb(34, 40, 49);
+    box-shadow: none;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    animation-duration: 800ms;
+    animation-iteration-count: 1;
+}
+
+.buydarkMarket-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    animation-timing-function: unset;
+    animation-delay: unset;
+    animation-direction: unset;
+    animation-fill-mode: unset;
+    animation-play-state: unset;
+    animation-name: unset;
+    animation-timeline: unset;
+    flex-wrap: wrap;
+    background: rgb(34, 40, 49);
+    box-shadow: none;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    animation-duration: 800ms;
+    animation-iteration-count: 1;
+}
+
+.emails-wrapper {
+    overflow-y: auto;
+    height: 85%;
+    position: relative;
+    margin-top: 49px;
+}
+
+.emails-entries {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+.time-email {
+    color: white;
+    margin-top: 13px;
+}
+
+.email-message {
+    color: white;
+    margin-top: 9px;
+    display: flex;
+    margin-left: -4px;
+    text-align: initial;
+    border-bottom: 1px solid white;
+    padding: 17px 2px;
+}
+
+.email-name {
+    color: white;
+    margin-top: 9px;
+    display: flex;
+    margin-left: -4px;
+    text-align: initial;
+}
+
+.debt-wrapper {
+    overflow-y: auto;
+    height: 71%;
+    position: relative;
+    margin-top: 49px;
+}
+
+.debt-entries {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.debt-footer {
+    position: relative;
+    bottom: 554px;
+    right: -106px;
+    top: -500p;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
