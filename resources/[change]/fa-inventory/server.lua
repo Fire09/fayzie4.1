@@ -1,0 +1,5 @@
+RegisterServerEvent("cash:remove")
+AddEventHandler("cash:remove", function(pSource, pAmount)
+    local user = exports["fa-base"]:getModule("Player"):GetUser(pSource)
+    user:removeMoney(pAmount)
+end)

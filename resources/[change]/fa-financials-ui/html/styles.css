@@ -1,0 +1,90 @@
+html {
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'pricedown';
+    src: url(pricedown.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#cash {
+    font-family: pricedown;
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+    text-shadow: rgb(0, 0, 0) -1.5px 1.5px 1.5px,
+                rgb(0, 0, 0) 1.5px 1.5px 0px,
+                rgb(0, 0, 0) 1.5px -1.5px 0px,
+                rgb(0, 0, 0) -1.5px -1.5px 0px;
+    margin: 0;
+    margin-right: 6px;
+}
+
+#add-balance {
+    font-family: pricedown;
+    font-weight: 400;
+    font-size: 29px;
+    color: white;
+    text-shadow: rgb(0, 0, 0) -1.5px 1.5px 1.5px,
+                rgb(0, 0, 0) 1.5px 1.5px 0px,
+                rgb(0, 0, 0) 1.5px -1.5px 0px,
+                rgb(0, 0, 0) -1.5px -1.5px 0px;
+    margin: 0;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
+#icon {
+    height: 21px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.green {
+    color: #008000;
+    font-weight: 700;
+    margin-right: -2px;
+}
+
+.red {
+    color: rgb(255, 0, 0);
+}
+
+#pre {
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+.balance {
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+}
+
+.cashtransaction {
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: white;
+}
