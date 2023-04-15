@@ -1,0 +1,11 @@
+RegisterNetEvent("fayzie:voice:server:phone:startCall")
+AddEventHandler("fayzie:voice:server:phone:startCall", function(source, callerID, receiverID)
+    TriggerClientEvent("fayzie:voice:phone:call:start",callerID, receiverID)
+    TriggerClientEvent("fayzie:voice:phone:call:start",receiverID, callerID)
+end)
+
+RegisterNetEvent("fayzie:voice:server:phone:endCall")
+AddEventHandler("fayzie:voice:server:phone:endCall", function(source, callerID, receiverID)
+    --TriggerClientEvent("fayzie:voice:phone:call:end", callerID, source)
+    TriggerClientEvent("fayzie:voice:phone:call:end", source, callerID)
+end)

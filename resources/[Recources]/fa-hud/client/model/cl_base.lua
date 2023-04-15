@@ -1,0 +1,33 @@
+local function restartUI(withMsg)
+  SendUIMessage({ source = "fa-nui", app = "main", action = "restart" });
+  if withMsg then
+    TriggerEvent("DoLongHudText", "You can also use 'ui-r' as a shorter version to restart!")
+  end
+  TriggerScreenblurFadeOut(100.0)
+  TriggerEvent('closeInventoryGui')
+  TriggerEvent('fa-banking:ResetUI')
+  TriggerEvent('fa-radio:ResetUI')
+  TriggerEvent('fa-menu:ResetUI')
+  TriggerEvent('fa-interact:ResetUI')
+  TriggerEvent('fa-mdt:ResetUI')
+  TriggerEvent('fa-ui:restartUI')
+  TriggerEvent('menu:menuexit')
+  TriggerEvent('clothing:close')
+  exports['fa-ui']:showInteraction("Restarting UI .")
+  Wait(1000)
+  exports['fa-ui']:showInteraction("Restarting UI ..")
+  Wait(1000)
+  exports['fa-ui']:showInteraction("Restarting UI ...")
+  Wait(1000)
+  exports['fa-ui']:showInteraction("UI Successfully Restarted")
+  Wait(1000)
+  exports['fa-ui']:hideInteraction()
+  exports["carandplayerhud"]:initHud(true)
+  SendUIMessage({ app = "hud", data = { display = true }, source = "fa-nui" })
+  local cj = exports["police"]:getCurrentJob()
+end
+
+RegisterCommand("fa-hud:restart", function() restartUI(true) end, false)
+RegisterCommand("hud-r", function() restartUI() end, false)
+RegisterNetEvent("fa-hud:server-restart")
+AddEventHandler("fa-hud:server-restart", restartUI)
